@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1443179414387
+Build-Jdk: 1.8.0_60
+Built-By: scarr
+Bundle-ManifestVersion: 2
+Bundle-Name: CentralConfig
+Bundle-SymbolicName: com.progbits.config.CentralConfig
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.progbits.config;version="1.0.0"
+Import-Package: com.progbits.config;version="[1.0,2)",org.osgi.framework
+ ;version="[1.6,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="com.prog
+ bits.config.CentralConfig";name=centralconfig
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Service-Component: OSGI-INF/centralconfig.xml
+Tool: Bnd-2.4.1.201501161923
